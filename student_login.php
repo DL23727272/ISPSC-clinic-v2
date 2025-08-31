@@ -278,7 +278,7 @@
 
         <!-- Back link -->
         <div class="text-center mt-5 pb-4">
-          <a href="index.php" class="text-success text-decoration-none">
+          <a href="./index" class="text-success text-decoration-none">
             <i class="fas fa-arrow-left"></i> Back to Home
           </a>
         </div>

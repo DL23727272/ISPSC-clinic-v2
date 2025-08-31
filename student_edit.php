@@ -220,20 +220,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
           <!-- Left side -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="student_medical.php">Home</a>
+              <a class="nav-link" aria-current="page" href="./student_medical">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" style="color: yellow" href="student_edit.php">Edit Health Info</a>
+              <a class="nav-link active" style="color: yellow" href="./student_edit">Edit Health Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="student_info.php">Edit Personal Info</a>
+              <a class="nav-link"  href="./student_info">Edit Personal Info</a>
             </li>
           </ul>
 
           <!-- Right side (Logout) -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">
+              <a class="nav-link" href="./index">
                 <i class="fa-solid fa-power-off"></i> Logout
               </a>
             </li>
@@ -652,7 +652,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     text: '<?= $_SESSION['swal']['text'] ?>'
     }).then(()=>{
         <?php if($_SESSION['swal']['icon'] === 'success'): ?>
-            window.location.href = "student_edit.php?student_id=" + studentId;
+            window.location.href = "./student_edit?student_id=" + studentId;
         <?php endif; ?>
     });
     </script>
@@ -679,7 +679,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
      <script>
         const studentId = sessionStorage.getItem("student_id");
         if (studentId && !window.location.search.includes("student_id")) {
-            window.location.href = "student_edit.php?student_id=" + studentId;
+            window.location.href = "./student_edit?student_id=" + studentId;
         }
     </script>
 

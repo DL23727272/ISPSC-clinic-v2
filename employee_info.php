@@ -133,20 +133,20 @@ $year_options = [1,2,3,4,5];
           <!-- Left side -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link "aria-current="page" href="employee_medical.php">Home</a>
+              <a class="nav-link "aria-current="page" href="./employee_medical">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="employee_edit.php">Edit Health Info</a>
+              <a class="nav-link" href="./employee_edit">Edit Health Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active"   style="color: yellow"  href="employee_info.php">Edit Personal Info</a>
+              <a class="nav-link active"   style="color: yellow"  href="./employee_info">Edit Personal Info</a>
             </li>
           </ul>
 
           <!-- Right side (Logout) -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">
+              <a class="nav-link" href="./index">
                 <i class="fa-solid fa-power-off"></i> Logout
               </a>
             </li>

@@ -300,7 +300,7 @@
                 sessionStorage.setItem("campus", result.campus);
 
                 // Redirect
-                window.location.href = "dashboard.php";
+                window.location.href = "./dashboard";
             } else {
                Swal.fire({
                     icon: 'error',

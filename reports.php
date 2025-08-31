@@ -70,16 +70,16 @@ require_once './backend/admin_reports.php';
     <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
     <nav class="sidebar">
         <div class="sidebar-menu">
-            <a href="dashboard.php" class="menu-item <?= ($currentPage == 'dashboard.php') ? 'active' : '' ?>">
+            <a href="./dashboard" class="menu-item <?= ($currentPage == './dashboard') ? 'active' : '' ?>">
                 <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
             </a>
-            <a href="patients.php" class="menu-item <?= ($currentPage == 'patients.php') ? 'active' : '' ?>">
+            <a href="./patients" class="menu-item <?= ($currentPage == './patients') ? 'active' : '' ?>">
                 <i class="fas fa-users"></i><span>Patient Informations</span>
             </a>
-            <a href="health_records.php" class="menu-item <?= ($currentPage == 'health_records.php') ? 'active' : '' ?>">
+            <a href="./health_records" class="menu-item <?= ($currentPage == './health_records') ? 'active' : '' ?>">
                 <i class="fas fa-clipboard-list"></i><span>Health Informations</span>
             </a>
-            <a href="reports.php" class="menu-item <?= ($currentPage == 'reports.php') ? 'active' : '' ?>">
+            <a href="./reports" class="menu-item <?= ($currentPage == './reports') ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i><span>Reports & Analytics</span>
             </a>
             <!-- <a href="#" class="menu-item <?= ($currentPage == 'settings.php') ? 'active' : '' ?>">

@@ -4,9 +4,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# If a .html file with that name exists, rewrite to it
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L]
+
 
 # (Optional) Also support .php files in the same way
 RewriteCond %{REQUEST_FILENAME}.php -f

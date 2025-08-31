@@ -1,15 +1,15 @@
 <?php
-// Database connection configuration
-// $host = 'localhost';
-// $username = 'root';
-// $password = '';
-// $database = 'isps_clinica';
-
-
+// Database configuration
 $host = 'localhost';
-$username = 'u227484579_clinic23';
-$password = 'dlGamoso23';
-$database = 'u227484579_clinicTest123';
+$username = 'root';
+$password = '';
+$database = 'isps_clinica';
+
+
+// $host = 'localhost';
+// $username = 'u227484579_clinic23';
+// $password = 'dlGamoso23';
+// $database = 'u227484579_clinicTest123';
 
 // Create connection
 $conn = new mysqli($host, $username, $password, $database);

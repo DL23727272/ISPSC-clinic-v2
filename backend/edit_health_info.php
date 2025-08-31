@@ -79,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             'title' => 'Success',
             'text' => 'Record updated successfully!'
         ];
-        header("Location: edit_health_info.php?id=$id");
+        header("Location: ./edit_health_info?id=$id");
         exit;
     } else {
         $_SESSION['swal'] = [
@@ -87,7 +87,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             'title' => 'Error',
             'text' => 'Error updating record: '.$conn->error
         ];
-        header("Location: edit_health_info.php?id=$id");
+        header("Location: ./edit_health_info?id=$id");
         exit;
     }
 
@@ -178,23 +178,23 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="logout-message" id="logout-message"><i class="fas fa-check-circle"></i><span>Successfully logged out! Redirecting...</span></div>
 
   <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
-    <nav class="sidebar">
+     <nav class="sidebar">
         <div class="sidebar-menu">
-           <div class="sidebar-menu">
-            <a href="../dashboard.php" class="menu-item <?= ($currentPage == './dashboard.php') ? 'active' : '' ?>">
+            <a href="../dashboard" class="menu-item <?= ($currentPage == './dashboard') ? 'active' : '' ?>">
                 <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
             </a>
-            <a href="../patients.php" class="menu-item <?= ($currentPage == './patients.php') ? 'active' : '' ?>">
+            <a href="../patients" class="menu-item <?= ($currentPage == './patients') ? 'active' : '' ?>">
                 <i class="fas fa-users"></i><span>Patient Informations</span>
             </a>
-            <a href="../health_records.php" class="menu-item <?= ($currentPage == './health_records.php') ? 'active' : '' ?>">
+            <a href="../health_records" class="menu-item <?= ($currentPage == './health_records') ? 'active' : '' ?>">
                 <i class="fas fa-clipboard-list"></i><span>Health Informations</span>
             </a>
-            <a href="../reports.php" class="menu-item <?= ($currentPage == './reports.php') ? 'active' : '' ?>">
+            <a href="../reports" class="menu-item <?= ($currentPage == './reports') ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i><span>Reports & Analytics</span>
             </a>
-        </div>
-          
+            <!-- <a href="#" class="menu-item <?= ($currentPage == 'settings.php') ? 'active' : '' ?>">
+                <i class="fas fa-cog"></i><span>Settings</span>
+            </a> -->
         </div>
     </nav>
 
@@ -608,7 +608,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     text: '<?= $_SESSION['swal']['text'] ?>'
     }).then(()=>{
         <?php if($_SESSION['swal']['icon'] === 'success'): ?>
-            window.location = '../health_records.php';
+            window.location = './health_records';
         <?php endif; ?>
     });
     </script>

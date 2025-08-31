@@ -100,20 +100,21 @@ require_once './backend/admin_health_records.php';
    <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
     <nav class="sidebar">
         <div class="sidebar-menu">
-           <div class="sidebar-menu">
-            <a href="./dashboard.php" class="menu-item <?= ($currentPage == './dashboard.php') ? 'active' : '' ?>">
+            <a href="./dashboard" class="menu-item <?= ($currentPage == './dashboard') ? 'active' : '' ?>">
                 <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
             </a>
-            <a href="./patients.php" class="menu-item <?= ($currentPage == './patients.php') ? 'active' : '' ?>">
+            <a href="./patients" class="menu-item <?= ($currentPage == './patients') ? 'active' : '' ?>">
                 <i class="fas fa-users"></i><span>Patient Informations</span>
             </a>
-            <a href="./health_records.php" class="menu-item <?= ($currentPage == './health_records.php') ? 'active' : '' ?>">
+            <a href="./health_records" class="menu-item <?= ($currentPage == './health_records') ? 'active' : '' ?>">
                 <i class="fas fa-clipboard-list"></i><span>Health Informations</span>
             </a>
-            <a href="./reports.php" class="menu-item <?= ($currentPage == './reports.php') ? 'active' : '' ?>">
+            <a href="./reports" class="menu-item <?= ($currentPage == './reports') ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i><span>Reports & Analytics</span>
             </a>
-        </div>
+            <!-- <a href="#" class="menu-item <?= ($currentPage == 'settings.php') ? 'active' : '' ?>">
+                <i class="fas fa-cog"></i><span>Settings</span>
+            </a> -->
         </div>
     </nav>
 
@@ -191,11 +192,11 @@ require_once './backend/admin_health_records.php';
                                         
                                         <?php if($type === 'student'): ?>
                                             <a href="./backend/pdf.php?student_id=<?= $row['person_id'] ?>&type=<?= $type ?>" target="_blank" class="btn btn-sm btn-success">Print</a>
-                                            <a href="./backend/edit_health_info.php?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="./backend/edit_health_info?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-primary">Edit</a>
                                             <!-- <a href="delete_health.php?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-danger" onclick="return confirm('Delete this record?')">Delete</a> -->
                                         <?php elseif($type === 'employee'): ?>
                                             <a href="./backend/pdf.php?id=<?= $row['id'] ?>&type=<?= $type ?>" target="_blank" class="btn btn-sm btn-success">Print</a>
-                                            <a href="./backend/edit_employee_health_info.php?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-primary">Edit</a>
+                                            <a href="./backend/edit_employee_health_info?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-primary">Edit</a>
                                             <!-- <a href="delete_health.php?id=<?= $row['id'] ?>&type=<?= $type ?>" class="btn btn-sm btn-danger" onclick="return confirm('Delete this record?')">Delete</a> -->
                                         <?php endif; ?>
                                     </td>

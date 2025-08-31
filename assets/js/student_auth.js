@@ -19,7 +19,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
                 text: data.message,
                 timer: 1500,
                 showConfirmButton: false
-            }).then(() => window.location.href = "student_medical.php");
+            }).then(() => window.location.href = "./student_medical");
         } else {
             Swal.fire("Error", data.message, "error");
         }

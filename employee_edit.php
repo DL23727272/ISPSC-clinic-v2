@@ -111,11 +111,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($conn->query($update_sql)) {
         $_SESSION['swal'] = ['icon'=>'success','title'=>'Success','text'=>'Record updated successfully!'];
-        header("Location: employee_edit.php");
+        header("Location: ./employee_edit");
         exit;
     } else {
         $_SESSION['swal'] = ['icon'=>'error','title'=>'Error','text'=>'Error updating record: '.$conn->error];
-        header("Location: employee_edit.php?employee_id=$employee_id");
+        header("Location: ./employee_edit?employee_id=$employee_id");
         exit;
     }
 }
@@ -244,20 +244,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
           <!-- Left side -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link "aria-current="page" href="employee_medical.php">Home</a>
+              <a class="nav-link "aria-current="page" href="./employee_medical">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active"   style="color: yellow"  href="employee_edit.php">Edit Health Info</a>
+              <a class="nav-link active"   style="color: yellow"  href="./employee_edit">Edit Health Info</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="employee_info.php">Edit Personal Info</a>
+              <a class="nav-link"  href="./employee_info">Edit Personal Info</a>
             </li>
           </ul>
 
           <!-- Right side (Logout) -->
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">
+              <a class="nav-link" href="./index">
                 <i class="fa-solid fa-power-off"></i> Logout
               </a>
             </li>
@@ -676,7 +676,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     text: '<?= $_SESSION['swal']['text'] ?>'
     }).then(()=>{
         <?php if($_SESSION['swal']['icon'] === 'success'): ?>
-            window.location.href = "employee_edit.php?employee_id=" + employeeId;
+            window.location.href = "./employee_edit?employee_id=" + employeeId;
         <?php endif; ?>
     });
     </script>

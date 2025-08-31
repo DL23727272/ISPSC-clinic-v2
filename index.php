@@ -107,7 +107,7 @@
                     <button id="cancel-scan" class="btn btn-secondary">Cancel</button>
                 </div>
                 
-                <a href="student_login.php" class="btn btn-primary m">
+                <a href="./student_login" class="btn btn-primary m">
                     <i class="fas fa-sign-in-alt"></i> Student Login
                 </a>
             </div>
@@ -119,7 +119,7 @@
                 </div>
                 <h3>Employee Portal</h3>
                 <p>Register or login to access medical form</p>
-                <a href="employee_login.php" class="btn btn-primary">
+                <a href="./employee_login" class="btn btn-primary">
                     <i class="fas fa-sign-in-alt"></i> Employee Login
                 </a>
             </div>
@@ -131,7 +131,7 @@
                 </div>
                 <h3>Admin Dashboard</h3>
                 <p>Secure access to manage all medical records and reports</p>
-                <a href="admin_login.php" class="btn btn-primary">
+                <a href="./admin_login" class="btn btn-primary">
                     <i class="fas fa-shield-alt"></i> Admin Access
                 </a>
             </div>
