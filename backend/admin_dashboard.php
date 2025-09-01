@@ -104,7 +104,7 @@ if ($role === 'super_admin') {
 }
 
 // ---------------- Employees ----------------
-if ($role === 'superadmin') {
+if ($role === 'super_admin') {
     $result = $conn->query("SELECT COUNT(*) FROM employees");
     $total_employees = $result->fetch_row()[0];
 
