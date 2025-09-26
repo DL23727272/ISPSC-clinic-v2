@@ -98,7 +98,7 @@ require_once './backend/admin_health_records.php';
     <div class="logout-message" id="logout-message"><i class="fas fa-check-circle"></i><span>Successfully logged out! Redirecting...</span></div>
 
    <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
-    <nav class="sidebar">
+     <nav class="sidebar">
         <div class="sidebar-menu">
             <a href="./dashboard" class="menu-item <?= ($currentPage == './dashboard') ? 'active' : '' ?>">
                 <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
@@ -111,6 +111,9 @@ require_once './backend/admin_health_records.php';
             </a>
             <a href="./reports" class="menu-item <?= ($currentPage == './reports') ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i><span>Reports & Analytics</span>
+            </a>
+            <a href="./certificate_info" class="menu-item <?= ($currentPage == './certificate_info') ? 'active' : '' ?>">
+                <i class="fas fa-clipboard-list"></i><span>Certificate Info</span>
             </a>
             <!-- <a href="#" class="menu-item <?= ($currentPage == 'settings.php') ? 'active' : '' ?>">
                 <i class="fas fa-cog"></i><span>Settings</span>

@@ -66,6 +66,9 @@ require_once './backend/admin_dashboard.php';
             <a href="./reports" class="menu-item <?= ($currentPage == './reports') ? 'active' : '' ?>">
                 <i class="fas fa-chart-line"></i><span>Reports & Analytics</span>
             </a>
+            <a href="./certificate_info" class="menu-item <?= ($currentPage == './certificate_info') ? 'active' : '' ?>">
+                <i class="fas fa-clipboard-list"></i><span>Certificate Info</span>
+            </a>
             <!-- <a href="#" class="menu-item <?= ($currentPage == 'settings.php') ? 'active' : '' ?>">
                 <i class="fas fa-cog"></i><span>Settings</span>
             </a> -->

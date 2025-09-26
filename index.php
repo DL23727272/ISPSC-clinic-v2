@@ -91,36 +91,36 @@
         </header>
 
         <div class="access-options">
-            <!-- Student QR Access -->
+            <!-- Student QR Access
             <div class="access-card student-access">
                 <div class="card-icon">
                     <i class="fas fa-user-graduate"></i>
                 </div>
                 <h3>Student Access</h3>
-                <p>Scan to Register or Log In for medical form</p>
-                <button id="scan-qr-btn" class="btn btn-primary m-2">
+                <p>Log In for medical form</p>
+                <!-- <button id="scan-qr-btn" class="btn btn-primary m-2">
                     <i class="fas fa-qrcode"></i> Scan QR Code
                 </button>
                 <div id="qr-scanner" class="qr-scanner hidden">
                     <div class="scanner-placeholder"></div>
                     <p class="scanner-instruction">Point your camera at your student QR code</p>
                     <button id="cancel-scan" class="btn btn-secondary">Cancel</button>
-                </div>
+                </div> 
                 
-                <a href="./student_login" class="btn btn-primary m">
+                <a href="student_login.php" class="btn btn-primary m">
                     <i class="fas fa-sign-in-alt"></i> Student Login
                 </a>
-            </div>
+            </div> -->
 
             <!-- Employee Access -->
             <div class="access-card employee-access">
                 <div class="card-icon">
                     <i class="fas fa-user-tie"></i>
                 </div>
-                <h3>Employee Portal</h3>
+                <h3>Login Portal</h3>
                 <p>Register or login to access medical form</p>
-                <a href="./employee_login" class="btn btn-primary">
-                    <i class="fas fa-sign-in-alt"></i> Employee Login
+                <a href="./new_login" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> User Login
                 </a>
             </div>
 

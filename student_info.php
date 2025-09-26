@@ -141,6 +141,9 @@ $year_options = [1,2,3,4,5];
             <li class="nav-item">
               <a class="nav-link active" style="color: yellow" href="./student_info">Edit Personal Info</a>
             </li>
+              <li class="nav-item">
+              <a class="nav-link"  href="./student_certificate">Issue Certificate</a>
+            </li>
           </ul>
 
           <!-- Right side (Logout) -->

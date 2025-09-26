@@ -129,6 +129,9 @@
             <li class="nav-item">
               <a class="nav-link"  href="./student_info">Edit Personal Info</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="./student_certificate">Issue Certificate</a>
+            </li>
           </ul>
 
           <!-- Right side (Logout) -->

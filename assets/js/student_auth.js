@@ -1,11 +1,10 @@
 // Login
-document.getElementById("loginForm").addEventListener("submit", function(e) {
+document.getElementById("studentLoginForm").addEventListener("submit", function(e) {
     e.preventDefault();
     let formData = new FormData(this);
     formData.append("action", "login");
 
     fetch("./backend/student_auth.php", { method: "POST", body: formData })
-
     .then(res => res.json())
     .then(data => {
         if (data.status === "success") {
@@ -27,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 });
 
 // Register
-document.getElementById("registerForm").addEventListener("submit", function(e) {
+document.getElementById("StudentRegisterForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     let form = this;

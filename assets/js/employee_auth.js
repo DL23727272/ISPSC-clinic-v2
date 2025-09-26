@@ -1,5 +1,5 @@
 // Login
-document.getElementById("loginForm").addEventListener("submit", function(e) {
+document.getElementById("employeeLoginForm").addEventListener("submit", function(e) {
     e.preventDefault();
     let formData = new FormData(this);
     formData.append("action", "login");
@@ -26,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 });
 
 // Register
-document.getElementById("registerForm").addEventListener("submit", function(e) {
+document.getElementById("EmployeeRegisterForm").addEventListener("submit", function(e) {
     e.preventDefault();
     let formData = new FormData(this);
     formData.append("action", "register");

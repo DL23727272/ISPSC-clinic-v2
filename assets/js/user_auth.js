@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
             showConfirmButton: true,    // force user to click OK
             confirmButtonText: "Go Back"
         }).then(() => {
-            window.location.href = "index.php"; // redirect after confirm
+            window.location.href = "./index"; // redirect after confirm
         });
     }
 });
